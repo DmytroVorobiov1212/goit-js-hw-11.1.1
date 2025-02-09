@@ -1,5 +1,5 @@
 export function createMarkup(array) {
-    return array.map(({ webformatURL, largeImageURL, tags, likes, views, comments, downloads }) => `<li class="gallery-item">
+  return array.map(({ webformatURL, largeImageURL, tags, likes, views, comments, downloads }) => `<li class="gallery-item">
       <a class="gallery-link" href="${largeImageURL}">
         <img class="gallery-image" src="${webformatURL}" alt="${tags}">
       </a>
