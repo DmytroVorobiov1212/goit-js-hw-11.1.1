@@ -1,1 +1,0 @@
-export default { KEY: '45785559-b0577f06fb94f4ced9a4d3280', BASE_URL: 'https://pixabay.com/api/' }

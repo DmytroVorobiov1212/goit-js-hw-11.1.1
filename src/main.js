@@ -3,8 +3,12 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
-import refs from "./js/refs";
-const { form, gallery, loader } = refs;
+// import refs from "./js/refs";
+// const { form, gallery, loader } = refs;
+
+const form = document.querySelector('.js-form');
+const gallery = document.querySelector('.js-gallery');
+export const loader = document.querySelector('.loader');
 
 import { createMarkup } from "./js/render-functions";
 import { getSearch } from "./js/pixabay-api";
@@ -20,6 +24,7 @@ function onSearch(evt) {
     loader.style.display = 'block';
 
     const { query } = evt.currentTarget.elements;
+    
 
     if (query.value.trim() === '') {
         return iziToast.info({
